@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 class Form extends Component {
   initialState = {
-    name: '',
-    job: '',
+    task: '',
+    util: '',
   }
   state = this.initialState
 
@@ -23,18 +23,18 @@ class Form extends Component {
   
     return (
       <form>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Task</label>
         <input
           type="text"
-          name="name"
-          id="name"
+          name="task"
+          id="task"
           value={name}
           onChange={this.handleChange} />
-        <label htmlFor="job">Job</label>
+        <label htmlFor="job">Util</label>
         <input
           type="text"
-          name="job"
-          id="job"
+          name="util"
+          id="util"
           value={job}
           onChange={this.handleChange} />
           <input type="button" value="Submit" onClick={this.submitForm} />
